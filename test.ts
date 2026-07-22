@@ -1,5 +1,5 @@
-import { api } from './api';
-import { Station, FloodArea, FloodAlert, Measure, Reading } from './types';
+import { api } from '@/lib/api';
+import type { Station, FloodArea, FloodAlert, Measure, Reading } from '@/lib/types';
 
 async function main() {
     const { items: stations } = await api.getData<Station>(api.endpoints.stations);
